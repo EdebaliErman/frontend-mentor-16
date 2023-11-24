@@ -15,7 +15,7 @@ function AboutBody() {
 
     return (
         <div className='AboutBody'>
-            <img src={process.env.PUBLIC_URL + "./assets/image-computer.png"} alt='desktop' />
+            <Desktop />
             <Features />
         </div>
     )
@@ -31,6 +31,14 @@ const Features = () => {
         }
     </div>
 
+}
+
+const Desktop = () => {
+    return <>
+        <div class="relative w-1/2 h-[50rem] overflow-hidden ">
+            <img class="absolute w-full  left-[-10rem]  object-cover" src={process.env.PUBLIC_URL + "./assets/image-computer.png"} alt='desktop' />
+        </div>
+    </>
 }
 
 export default AboutBody

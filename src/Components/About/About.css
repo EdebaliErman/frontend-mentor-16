@@ -14,15 +14,15 @@
     }
 
     .AboutBody {
-        @apply flex justify-center items-center w-full gap-56 mt-36
+        @apply flex justify-start items-center w-full gap-1 mt-36
     }
     .AboutBody .features{
-        @apply flex justify-center items-center flex-col gap-12 w-96 text-left 
+        @apply flex justify-start items-start flex-col gap-28 w-96 text-left mt-[-9rem]
     }
     .features h3{
-        @apply text-2xl text-darkGrayishBlue font-bold
+        @apply text-3xl text-darkGrayishBlue font-bold
     }
     .features h5{
-        @apply text-lg text-GrayishBlue 
+        @apply text-lg text-GrayishBlue mt-4 
     }
 }
