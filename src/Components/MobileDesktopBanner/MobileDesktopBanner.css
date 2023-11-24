@@ -1,0 +1,15 @@
+@tailwind components;
+
+@layer components {
+    .MobileDesktopBanner {
+        @apply flex justify-center items-center 
+        flex-col text-center gap-28
+    }
+    .MobileDesktopBanner h1{
+        @apply  text-5xl text-darkGrayishBlue
+    }
+    
+    .MobileDesktopBanner h4{
+        @apply  text-xl text-GrayishBlue w-[56rem] mt-4 px-12
+    }
+}
