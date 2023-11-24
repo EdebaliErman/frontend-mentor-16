@@ -4,7 +4,7 @@
     header{
         @apply w-full h-full 
         flex justify-center items-center 
-        flex-col gap-12 p-14  text-center
+        flex-col gap-12 p-14  text-center mb-14
     }
   
     

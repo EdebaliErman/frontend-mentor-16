@@ -1,0 +1,28 @@
+@tailwind components;
+
+@layer components {
+    .About {
+        @apply flex justify-center items-center text-center flex-col mt-56 z-10 relative
+    }
+
+    .About h2 {
+        @apply text-4xl font-black text-darkGrayishBlue
+    }
+
+    .About h4 {
+        @apply text-2xl text-GrayishBlue font-light w-1/2 p-3
+    }
+
+    .AboutBody {
+        @apply flex justify-center items-center w-full gap-56 mt-36
+    }
+    .AboutBody .features{
+        @apply flex justify-center items-center flex-col gap-12 w-96 text-left 
+    }
+    .features h3{
+        @apply text-2xl text-darkGrayishBlue font-bold
+    }
+    .features h5{
+        @apply text-lg text-GrayishBlue 
+    }
+}
