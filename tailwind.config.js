@@ -10,7 +10,7 @@ module.exports = {
         'strongCyan': "hsl(171, 66%, 44%)",
         "lightBlue": "hsl(233, 100%, 69%)",
         "darkGrayishBlue": "hsl(210, 10%, 33%)",
-        "Grayish Blue": "hsl(201, 11%, 66%)"
+        "GrayishBlue": "hsl(201, 11%, 66%)"
       }
     },
   },

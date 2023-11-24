@@ -1,0 +1,30 @@
+@tailwind components;
+
+@layer components{
+    header{
+        @apply w-full h-full 
+        flex justify-center items-center 
+        flex-col gap-12 p-14  text-center
+    }
+  
+    
+    header h1{
+        @apply text-5xl font-black text-darkGrayishBlue 
+    }
+    header h4{
+        @apply text-2xl text-GrayishBlue font-light w-1/2  p-3
+    }
+        
+    .buttons{
+        @apply flex justify-center items-center w-1/3 gap-12
+    }
+    header button{
+        @apply w-full p-4 text-white shadow-md rounded-full  font-semibold
+    }
+    .ios-button{
+        @apply bg-strongCyan shadow-strongCyan
+    }
+    .mac-button{
+        @apply bg-lightBlue shadow-lightBlue
+    }
+}
