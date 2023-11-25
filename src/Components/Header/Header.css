@@ -10,6 +10,7 @@
     
     header h1{
         @apply text-5xl font-black text-darkGrayishBlue 
+        
     }
     header h4{
         @apply text-2xl text-GrayishBlue font-light w-1/2  p-3

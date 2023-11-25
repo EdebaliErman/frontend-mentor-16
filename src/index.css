@@ -6,6 +6,7 @@
 @layer base {
   html,
   body {
-    @apply w-full h-full 
+    @apply w-full h-full m-0
   }
+
 }
