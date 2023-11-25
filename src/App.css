@@ -7,11 +7,11 @@
     }
 
     .header-bg {
-        @apply w-full h-full z-0 absolute hidden 2xl:flex xl:flex lg:flex
+        @apply w-full  z-0 absolute hidden 2xl:flex xl:flex lg:flex
     }
 
     .header-bg-mobile {
-        @apply w-full h-full z-0 absolute 2xl:hidden xl:hidden lg:hidden
+        @apply w-full h-full z-0 fixed 2xl:hidden xl:hidden lg:hidden
 
     }
 }
