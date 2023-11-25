@@ -1,5 +1,54 @@
 @tailwind components;
 
-@layer components{
-    
+@layer components {
+    .Footer {
+        @apply flex flex-col justify-center items-center w-full gap-8 mt-12
+    }
+
+    .Footer h1 {
+        @apply text-5xl text-darkGrayishBlue font-bold
+    }
+
+    .Footer h2 {
+        @apply text-2xl text-darkGrayishBlue font-bold
+    }
+
+    .Footer h4 {
+        @apply text-xl text-GrayishBlue
+    }
+
+    .FooterCards {
+        @apply flex justify-center items-start mt-16 gap-12 
+    }
+
+    .FooterCards div {
+        @apply w-[420px] text-center flex flex-col justify-center items-center gap-7  
+    }
+    .MarkaCards {
+        @apply flex justify-around items-center  w-full p-44
+    }
+    .buttons{
+        @apply flex justify-center items-center w-1/3 gap-12 my-12
+    }
+    .ios-button{
+        @apply bg-strongCyan shadow-strongCyan
+    }
+    .mac-button{
+        @apply bg-lightBlue shadow-lightBlue
+    }
+    .Footer button{
+        @apply w-full p-4 text-white shadow-md rounded-full  font-semibold
+    }
+    .FooterBottom{
+        @apply m-12 flex flex-col justify-center items-center gap-4
+    }
+    .FooterContact{
+        @apply flex justify-around items-center w-full p-12 bg-gray-100
+    }
+    .contact-baner{
+        @apply flex gap-12 
+    }
+    .contact-baner h4{
+        @apply text-darkGrayishBlue font-medium
+    }
 }

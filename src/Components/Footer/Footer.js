@@ -1,12 +1,15 @@
 import React from 'react'
 import "./Footer.css"
+import Buttons from '../Header/Buttons'
 
 function Footer() {
   return (
-    <div>
+    <div className='Footer'>
       <FooterTitle />
       <FooterCards />
       <MarkaCards />
+      <FooterBottom />
+      <FooterContact />
     </div>
   )
 }
@@ -44,7 +47,7 @@ const FooterTitle = () => {
 }
 
 const FooterCards = () => {
-  return <div>
+  return <div className='FooterCards'>
     {footerCards.map((item, key) => <div key={key}>
       <img src={item.icon} alt='item' />
       <h2>{item.title}</h2>
@@ -54,12 +57,45 @@ const FooterCards = () => {
 }
 
 const MarkaCards = () => {
-  return <div>
+  return <div className='MarkaCards'>
     {marka.map((item, key) => <div key={key}>
       <img src={item} alt='marka' />
     </div>)}
   </div>
 }
 
+const FooterBottom = () => {
+  return <div className='FooterBottom'>
+    <h1> Clipboard for iOS and Mac OS </h1 >
+    <h4 className='mx-96 px-32 text-center mt-4'>Available for free on the App Store. Download for Mac or iOS, sync with iCloud and you're ready to start adding to your clipboard.</h4>
+    <Buttons />
+  </div>
+
+}
+
+const FooterContact = () => {
+  return <div className='FooterContact'>
+    <div className='contact-baner'>
+      <img className='w-16 h-16 mx-32' src={process.env.PUBLIC_URL + "./assets/logo.svg"} alt='logo' />
+      <div className='flex  gap-16'>
+        <div className='flex flex-col gap-6'>
+          <h4>FAQs</h4>
+          <h4>Contact Us</h4>
+        </div>
+        <div className='flex flex-col gap-6'>
+          <h4>Privacy Policy </h4>
+          <h4>Press Kit </h4>
+        </div>
+        <h4>Install Guide </h4>
+      </div>
+
+    </div>
+    <div className='flex gap-4'>
+      <img src={process.env.PUBLIC_URL + "./assets/icon-facebook.svg"} alt='logo' />
+      <img src={process.env.PUBLIC_URL + "./assets/icon-twitter.svg"} alt='logo' />
+      <img src={process.env.PUBLIC_URL + "./assets/icon-instagram.svg"} alt='logo' />
+    </div>
+  </div>
+}
 
 export default Footer
