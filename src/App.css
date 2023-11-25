@@ -3,7 +3,7 @@
 @layer components {
 
     .App {
-        @apply font-baiJamjuree w-full h-full
+        @apply font-baiJamjuree w-full h-full relative
     }
 
     .header-bg {
