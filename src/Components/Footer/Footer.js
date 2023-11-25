@@ -67,7 +67,10 @@ const MarkaCards = () => {
 const FooterBottom = () => {
   return <div className='FooterBottom'>
     <h1> Clipboard for iOS and Mac OS </h1 >
-    <h4 className='mx-96 px-32 text-center mt-4'>Available for free on the App Store. Download for Mac or iOS, sync with iCloud and you're ready to start adding to your clipboard.</h4>
+    <h4 className='
+    mx-96 px-32 text-center mt-4 
+    md:mx-0 md:px-0
+    '>Available for free on the App Store. Download for Mac or iOS, sync with iCloud and you're ready to start adding to your clipboard.</h4>
     <Buttons />
   </div>
 
@@ -76,8 +79,10 @@ const FooterBottom = () => {
 const FooterContact = () => {
   return <div className='FooterContact'>
     <div className='contact-baner'>
-      <img className='w-16 h-16 mx-32' src={process.env.PUBLIC_URL + "./assets/logo.svg"} alt='logo' />
-      <div className='flex  gap-16'>
+      <img className='w-16 h-16 mx-32 md:mx-12' src={process.env.PUBLIC_URL + "./assets/logo.svg"} alt='logo' />
+      <div className='flex  gap-16 
+      md:flex-col md:gap-4 md:justify-center md:items-center
+      '>
         <div className='flex flex-col gap-6'>
           <h4>FAQs</h4>
           <h4>Contact Us</h4>
@@ -90,7 +95,7 @@ const FooterContact = () => {
       </div>
 
     </div>
-    <div className='flex gap-4'>
+    <div className='flex gap-4 md:mt-12 md:gap-12'>
       <img src={process.env.PUBLIC_URL + "./assets/icon-facebook.svg"} alt='logo' />
       <img src={process.env.PUBLIC_URL + "./assets/icon-twitter.svg"} alt='logo' />
       <img src={process.env.PUBLIC_URL + "./assets/icon-instagram.svg"} alt='logo' />

@@ -53,11 +53,12 @@
     }
     .FooterContact{
         @apply flex justify-around items-center w-full p-12 bg-gray-100
+        md:flex-col md:justify-center md:items-center md:text-center
     }
     .contact-baner{
-        @apply flex gap-12 
+        @apply flex gap-12 md:flex-col
     }
     .contact-baner h4{
-        @apply text-darkGrayishBlue font-medium
+        @apply text-darkGrayishBlue font-semibold 
     }
 }
