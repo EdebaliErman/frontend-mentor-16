@@ -4,20 +4,23 @@
     header{
         @apply w-full h-full 
         flex justify-center items-center 
-        flex-col gap-12 p-14  text-center mb-14
+        flex-col gap-12 p-14  text-center mb-14 relative z-10
+        md:gap-4
     }
   
     
     header h1{
         @apply text-5xl font-black text-darkGrayishBlue 
-        
+        md:text-[28px] md:text-center  md:mt-12
     }
     header h4{
         @apply text-2xl text-GrayishBlue font-light w-1/2  p-3
+        md:w-full md:text-[13.5px] md:p-0 md:leading-4 md:text-center md:indent-3
     }
         
     .buttons{
-        @apply flex justify-center items-center w-1/3 gap-12
+        @apply flex justify-center items-center w-1/3 gap-12 
+        md:flex-col md:w-full md:gap-6
     }
     header button{
         @apply w-full p-4 text-white shadow-md rounded-full  font-semibold

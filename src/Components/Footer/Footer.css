@@ -3,29 +3,38 @@
 @layer components {
     .Footer {
         @apply flex flex-col justify-center items-center w-full gap-8 mt-12
+        
     }
 
     .Footer h1 {
         @apply text-5xl text-darkGrayishBlue font-bold
+        md:text-center md:text-4xl
     }
 
     .Footer h2 {
         @apply text-2xl text-darkGrayishBlue font-bold
+        md:text-center 
+   
     }
 
     .Footer h4 {
         @apply text-xl text-GrayishBlue
+        md:text-center md:text-xl
+
     }
 
     .FooterCards {
         @apply flex justify-center items-start mt-16 gap-12 
+        md:flex-col
     }
 
     .FooterCards div {
         @apply w-[420px] text-center flex flex-col justify-center items-center gap-7  
+        md:w-80
     }
     .MarkaCards {
         @apply flex justify-around items-center  w-full p-44
+        md:flex-col md:p-0 md:gap-12 md:mt-28
     }
     .buttons{
         @apply flex justify-center items-center w-1/3 gap-12 my-12

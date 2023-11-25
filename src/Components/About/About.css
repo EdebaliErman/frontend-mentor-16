@@ -2,27 +2,43 @@
 
 @layer components {
     .About {
-        @apply flex justify-center items-center text-center flex-col mt-56 z-10 relative
+        @apply flex justify-center items-center text-center flex-col mt-56 z-10 relative md:mt-0
     }
 
     .About h2 {
-        @apply text-4xl font-black text-darkGrayishBlue
+        @apply text-4xl font-black text-darkGrayishBlue md:text-3xl
     }
 
     .About h4 {
-        @apply text-2xl text-GrayishBlue font-light w-1/2 p-3
+        @apply text-2xl text-GrayishBlue font-light w-1/2 p-3 md:w-full md:text-lg
     }
 
     .AboutBody {
         @apply flex justify-start items-center w-full gap-1 mt-36
+        md:flex-col md:justify-start md:items-start
     }
-    .AboutBody .features{
+
+    .desktop {
+        @apply relative w-1/2 h-[50rem] overflow-hidden
+        md:overflow-auto md:h-96 md:w-96 md:px-8 md:mt-[-6rem]
+    }
+
+    .desktop img {
+        @apply absolute w-full  left-[-10rem]  object-cover
+        md:relative md:left-0  md:h-max md:object-fill
+    }
+
+    .AboutBody .features {
         @apply flex justify-start items-start flex-col gap-28 w-96 text-left mt-[-9rem]
+        md:mt-[-4rem] md:justify-center md:items-center md:text-center md:px-6 
     }
-    .features h3{
+
+    .features h3 {
         @apply text-3xl text-darkGrayishBlue font-bold
+        md:text-[26px] md:mt-[-3rem]
     }
-    .features h5{
-        @apply text-lg text-GrayishBlue mt-4 
+
+    .features h5 {
+        @apply text-lg text-GrayishBlue mt-4
     }
 }

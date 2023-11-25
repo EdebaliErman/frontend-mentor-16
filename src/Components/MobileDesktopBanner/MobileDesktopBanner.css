@@ -4,12 +4,19 @@
     .MobileDesktopBanner {
         @apply flex justify-center items-center 
         flex-col text-center gap-28
+        md:mt-56  md:justify-center md:items-center
+        md:w-96 md:gap-12
+    }
+    .MobileDesktopBanner img{
+        @apply md:w-full 
     }
     .MobileDesktopBanner h1{
         @apply  text-5xl text-darkGrayishBlue
+        md:w-full md:text-4xl font-bold
     }
     
     .MobileDesktopBanner h4{
         @apply  text-xl text-GrayishBlue w-[56rem] mt-4 px-12
+        md:w-full md:text-sm
     }
 }

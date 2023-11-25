@@ -35,8 +35,8 @@ const Features = () => {
 
 const Desktop = () => {
     return <>
-        <div className="relative w-1/2 h-[50rem] overflow-hidden ">
-            <img className="absolute w-full  left-[-10rem]  object-cover" src={process.env.PUBLIC_URL + "./assets/image-computer.png"} alt='desktop' />
+        <div className="desktop ">
+            <img className="" src={process.env.PUBLIC_URL + "./assets/image-computer.png"} alt='desktop' />
         </div>
     </>
 }
